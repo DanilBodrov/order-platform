@@ -1,0 +1,47 @@
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+release.properties
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+*.log
+hs_err_pid*
+
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.settings/
+.classpath
+.project
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env & secrets
+.env
+.env.*
+!.env.example
+.secrets/
+
+# Docker / k8s локальные артефакты
+*.pid
+*.sock
+
+# Helm
+infra/helm/**/charts/
+infra/helm/**/Chart.lock
+
+# Логи и отчёты
+logs/
+*.log
+coverage/
