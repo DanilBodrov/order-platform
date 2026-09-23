@@ -1,0 +1,60 @@
+# ============================================================
+# Line endings
+# ============================================================
+# Normalize all text files to LF in the repository.
+# On Windows working copy, git with core.autocrlf=true will
+# convert to CRLF on checkout.
+* text=auto
+
+# Explicit LF for source and config
+*.java      text eol=lf
+*.kt        text eol=lf
+*.groovy    text eol=lf
+*.xml       text eol=lf
+*.yml       text eol=lf
+*.yaml      text eol=lf
+*.json      text eol=lf
+*.properties text eol=lf
+*.md        text eol=lf
+*.txt       text eol=lf
+*.proto     text eol=lf
+*.avsc      text eol=lf
+*.sql       text eol=lf
+*.sh        text eol=lf
+Makefile    text eol=lf
+Dockerfile  text eol=lf
+.gitignore  text eol=lf
+.gitattributes text eol=lf
+.editorconfig text eol=lf
+
+# Windows scripts must keep CRLF
+*.ps1       text eol=crlf
+*.psm1      text eol=crlf
+*.bat       text eol=crlf
+*.cmd       text eol=crlf
+
+# ============================================================
+# Binary files - never touch
+# ============================================================
+*.jar       binary
+*.war       binary
+*.ear       binary
+*.class     binary
+*.png       binary
+*.jpg       binary
+*.jpeg      binary
+*.gif       binary
+*.ico       binary
+*.svg       binary
+*.pdf       binary
+*.zip       binary
+*.tar       binary
+*.gz        binary
+*.7z        binary
+*.keystore  binary
+*.jks       binary
+
+# Maven wrapper jar (когда добавим)
+mvnw        text eol=lf
+mvnw.cmd    text eol=crlf
+.mvn/wrapper/maven-wrapper.jar binary
