@@ -58,5 +58,3 @@ PowerShell:
 ```bash
 mvn -B verify
 ```
-
-## Тест CI
